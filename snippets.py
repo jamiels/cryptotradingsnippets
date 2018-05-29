@@ -26,3 +26,6 @@ def load(url,printout=False,delay=0,remove_bottom_rows=0,remove_columns=[]):
         print(df.head())
         print(df.tail())
     return df
+
+def build_request():
+    return "{ \"type\": \"subscribe\",    \"channels\": [{ \"name\": \"heartbeat\", \"product_ids\": [\"ETH-USD\"] }]}"

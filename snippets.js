@@ -6,5 +6,27 @@
     function getHeaders() {
     return {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'};
     }
+
+function requestBuilder() {
+    request = `
+    {
+        "type": "subscribe",
+        "product_ids": [
+            "ETH-USD"
+        ],
+        "channels": [
+            "level2",
+            "ticker",
+            {
+                "name": "ticker",
+                "product_ids": [
+                    "ETH-USD"
+                ]
+            }
+        ]
+    }`
+
+    return request;
+}
     
     

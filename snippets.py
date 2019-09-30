@@ -1,3 +1,6 @@
+# Coindesk BPI
+url = 'http://api.coindesk.com/v1/bpi/historical/close.json?start=2019-05-10&end=2019-05-18'
+
 # Used in exercise 1
 pizza_tx_hash = "a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
 
